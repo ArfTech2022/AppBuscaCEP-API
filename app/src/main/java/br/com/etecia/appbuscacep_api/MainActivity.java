@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     EditText txtCep;
     TextView lblCEP, lblLogradouro, lblComplemento, lblBairro, lblCidade, lblEstado;
 
+    EditText CidadeEditText;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                     lblLogradouro.setText(retorno.getLogradouro().toString());
                     lblComplemento.setText(retorno.getComplemento().toString());
                     lblBairro.setText(retorno.getBairro().toString());
-                    lblCidade.setText(retorno.getLocalidade().toString());
+                    CidadeEditText.setText(retorno.getLocalidade().toString());
                     lblEstado.setText(retorno.getUf().toString());
 
 
