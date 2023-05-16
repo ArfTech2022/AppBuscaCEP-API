@@ -183,8 +183,16 @@
             android:padding="10dp"
             android:text="Limpar"
             android:textSize="15sp" />
-
     </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/cadastrar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/baseline_add"
+        android:contentDescription="@string/cadastrar"
+        android:layout_margin="16dp" />
 
 
 </LinearLayout>
