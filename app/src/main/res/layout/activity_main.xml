@@ -7,6 +7,7 @@
     android:padding="50dp"
     tools:context=".MainActivity">
 
+
     <EditText
         android:id="@+id/txtCep"
         android:layout_width="match_parent"
@@ -15,7 +16,7 @@
         android:hint="Insira seu CEP"
         android:inputType="number"
         android:textColor="#595959"
-        android:textSize="20sp" />
+        android:textSize="15sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -27,14 +28,11 @@
             android:id="@+id/btnBuscaCep"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="10dp"
-            android:padding="10dp"
+            android:padding="2dp"
             android:text="Buscar CEP"
-            android:textSize="22sp" />
+            android:textSize="18sp" />
 
     </LinearLayout>
-
 
     <TextView
         android:id="@+id/Logradouro"
@@ -52,8 +50,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Insira seu endereço"
-        android:text="@{mod.logradouro}" />
+        android:hint="Insira seu endereço"/>
 
     <TextView
         android:id="@+id/Complemento"
@@ -71,8 +68,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Complemento"
-        android:text="@{mod.Complemento}" />
+        android:hint="Complemento" />
 
     <TextView
         android:id="@+id/Bairro"
@@ -89,8 +85,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Bairro"
-        android:text="@{mod.Bairro}" />
+        android:hint="Bairro" />
 
     <TextView
         android:id="@+id/Cidade"
@@ -107,8 +102,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Cidade"
-        android:text="@{mod.Cidade}" />
+        android:hint="Cidade" />
 
     <TextView
         android:id="@+id/Estado"
@@ -125,8 +119,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="Estado"
-        android:text="@{mod.Estado}" />
+        android:hint="Estado" />
 
     <TextView
         android:id="@+id/CEP"
@@ -143,8 +136,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentStart="true"
-        android:hint="CEP"
-        android:text="@{mod.CEP}" />
+        android:hint="CEP" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -156,7 +148,6 @@
             android:id="@+id/btnAlterar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="5dp"
             android:padding="10dp"
@@ -167,7 +158,6 @@
             android:id="@+id/btnExcluir"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="5dp"
             android:padding="10dp"
@@ -178,12 +168,12 @@
             android:id="@+id/btnLimpar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:padding="10dp"
             android:text="Limpar"
             android:textSize="15sp" />
     </LinearLayout>
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/cadastrar"
@@ -193,6 +183,7 @@
         android:src="@drawable/baseline_add"
         android:contentDescription="@string/cadastrar"
         android:layout_margin="16dp" />
+
 
 
 </LinearLayout>
